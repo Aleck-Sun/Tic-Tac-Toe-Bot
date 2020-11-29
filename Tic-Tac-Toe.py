@@ -220,9 +220,7 @@ def compMove():
             #Tests all possible moves and undos later
             if spaceFree(grid, i):
                 tryMove(i)
-                print(grid)
                 score = minimax()
-                print(score)
                 undoMove(i)
                 
                 if score > bestScore:
